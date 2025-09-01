@@ -21,6 +21,16 @@ body {
 }
 
 /* ===== Navbar ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1100;      
+}
+
 header {
   width: 100%;
   background: linear-gradient(90deg, #dfefff, #a6c8ff, #6a9dfd, #3b6fd8); /* smoother multi-shade blue gradient */
@@ -91,20 +101,13 @@ header {
   width: 100%;
 }
 
-/* ===== Mobile Menu Button ===== */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-}
+
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 72px;
+    top: 68px;
     right: 0;
     background: linear-gradient(180deg, #6a9dfd, #3b6fd8); /* mobile dropdown with matching gradient */
     flex-direction: column;
@@ -127,18 +130,16 @@ header {
 
   .menu-toggle {
     display: block;
+    margin-right: 8px;
   }
   .navbar {
-    padding: 16px 14px; /* reduce side padding so logo/toggle don’t get cut */
+    padding: 14px 12px; /* reduce side padding so logo/toggle don’t get cut */
   }
 
   .logo {
-    margin-left: 6px; /* move logo slightly right */
+    margin-left: 8px; /* move logo slightly right */
   }
 
-  .menu-toggle {
-    margin-right: -6px; /* move toggle slightly left */
-  }
 }
 
 /* ===== Animations ===== */
