@@ -104,8 +104,8 @@ header {
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 70px;
-    right: 5px;
+    top: 72px;
+    right: 0;
     background: linear-gradient(180deg, #6a9dfd, #3b6fd8); /* mobile dropdown with matching gradient */
     flex-direction: column;
     width: 240px;
@@ -122,11 +122,19 @@ header {
 
   .nav-links li {
     text-align: right;
-    margin: 12px -2px;
+    margin: 12px 0;
+  }
+
+  .navbar {
+    padding: 16px 14px; /* reduce side padding so logo/toggle don’t get cut */
+  }
+
+  .logo {
+    margin-left: 6px; /* move logo slightly right */
   }
 
   .menu-toggle {
-    display: block;
+    margin-right: 6px; /* move toggle slightly left */
   }
 }
 
