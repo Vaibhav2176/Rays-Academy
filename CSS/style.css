@@ -125,6 +125,9 @@ header {
     margin: 12px 0;
   }
 
+  .menu-toggle {
+    display: block;
+  }
   .navbar {
     padding: 16px 14px; /* reduce side padding so logo/toggle don’t get cut */
   }
