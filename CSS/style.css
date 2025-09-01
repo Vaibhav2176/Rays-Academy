@@ -137,7 +137,7 @@ header {
   }
 
   .menu-toggle {
-    margin-right: 6px; /* move toggle slightly left */
+    margin-right: -6px; /* move toggle slightly left */
   }
 }
 
