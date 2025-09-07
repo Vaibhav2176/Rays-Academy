@@ -13,26 +13,7 @@ body {
 }
 
 
-/* ===== General Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ===== Navbar ===== */
-
-
-/* ===== Mobile Menu Button ===== */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  z-index: 1100;      /* ✅ keep toggle button above everything */
-} 
-
 header {
   width: 100%;
   background: linear-gradient(90deg, #dfefff, #a6c8ff, #6a9dfd, #3b6fd8); /* smoother multi-shade blue gradient */
@@ -56,7 +37,6 @@ header {
 .logo {
   height: 55px;
   border-radius: 10px;
-  margin-left: 4px;   /* ✅ move logo slightly right */
 }
 
 /* ===== Nav Links ===== */
@@ -104,9 +84,30 @@ header {
   width: 100%;
 }
 
+/* ===== Mobile Menu Button ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 16px 12px; /* tighter padding so logo & button are visible */
+  }
+
+  .logo {
+    margin-left: 4px; /* shift logo slightly left */
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 4px; /* shift menu button slightly right */
+  }
+
   .nav-links {
     position: absolute;
     top: 70px;
@@ -120,24 +121,6 @@ header {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   }
 
-  .navbar {
-    padding: 14px 12px;   /* ✅ reduced padding so content doesn’t push out */
-  }
-
-  .logo {
-    margin-left: 8px;    /* ✅ more breathing room on left */
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-right: 8px;   /* ✅ move slightly inward (was negative earlier) */
-  }
-
-  .nav-links {
-    top: 68px;           /* ✅ align dropdown perfectly under navbar */
-  }
-}
-
   .nav-links.active {
     display: flex;
     animation: slideDown 0.35s ease forwards;
@@ -146,10 +129,6 @@ header {
   .nav-links li {
     text-align: right;
     margin: 12px 0;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 }
 
@@ -164,6 +143,7 @@ header {
     transform: translateY(0);
   }
 }
+
 
 
 
