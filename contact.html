@@ -8,6 +8,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Navigation -->
+ <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/Rays Academy LOGO.jpg" alt="Rays Academy Logo" class="logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Student Portal</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    // Mobile menu toggle script
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
   <!-- ===== Contact Section ===== -->
   <section class="contact-section">
     <h1 class="page-title">Get in Touch with <span class="span1"><span class="rays">Rays</span> <span class="academy">Academy</span></h1>
@@ -52,8 +86,8 @@
         </div>
 
         <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1ECsLzqzrw/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/raysacademybhopal?igsh=MWtyNWQyaWVrZHoxcg=="><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
@@ -96,5 +130,30 @@
 
     </div>
   </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-left"> 
+      <img src="images/Rays Academy LOGO.jpg" alt="Rays logo" class="footer-logo" />
+      <p>© 2025 Rays Academy. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <ul class="social-links">
+  <li><a href="" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://youtube.com/@shankaramulani?si=hwFWVNqRYWTukfCI" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+  <li><a href="https://www.facebook.com/share/1ECsLzqzrw/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+  <li><a href="https://www.instagram.com/raysacademybhopal?igsh=MWtyNWQyaWVrZHoxcg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+      <ul class="footer-nav">
+        <li><a href="pripol.html">Privacy Policy</a></li>
+        <li><a href="tou.html">Terms of Use</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
