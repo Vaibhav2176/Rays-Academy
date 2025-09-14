@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Rays Academy</title>
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/Rays Academy LOGO.jpg" alt="Rays Academy Logo" class="logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Student Portal</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // Mobile menu toggle script
+        const toggle = document.getElementById("menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>Our Story of Dedication, Excellence, and Success</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>
+                    Rays Academy was not just founded, it was built on a foundation of passion and a
+                    clear vision. Our journey began in 2006, when our founder, **Mr. Shankar Lal Amulani**, a
+                    veteran Mathematics faculty with decades of teaching expertise, decided to create a
+                    learning space that went beyond traditional coaching. His goal was simple yet profound:
+                    to provide a holistic and nurturing environment where every student could unlock their full potential.
+                </p>
+                <p>
+                    For years, Mr. Amulani's dedication and results-oriented approach have shaped the academic
+                    journeys of countless students. He instills not just subject knowledge but also discipline,
+                    critical thinking, and problem-solving skills. Under his leadership, Rays Academy has
+                    consistently delivered a **100% success rate** and become a trusted name for quality
+                    education in Bhopal.
+                </p>
+                <p>
+                    Our story is one of continuous growth, built on the trust of students and parents alike.
+                    We believe in personal attention, consistent support, and a commitment to excellence that
+                    prepares students for success not just in exams, but in life.
+                </p>
+            </div>
+            <div class="story-image-container">
+                <img src="images/photo.jpeg" alt="Rays Academy Founder Mr. Shankar Amulani" class="story-image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Faculty Section -->
+    <section class="faculty-section">
+        <h2 class="section-title text-center">Meet Our Faculty</h2>
+        <p class="intro-text text-center">Learn from the experts who are dedicated to your success.</p>
+
+        <div class="faculty-grid">
+            <!-- Faculty Member 1 - Founder -->
+            <div class="faculty-card founder">
+                <img src="images/papa.jpeg" alt="Mr. Shankar Amulani" class="faculty-img" />
+                <h3>Mr. Shankar Lal Amulani</h3>
+                <p class="role">Founder & Director, Mathematics Faculty</p>
+                <p class="experience">30+ Years of Experience</p>
+                <p class="bio">
+                    The visionary behind Rays Academy, Mr. Amulani is a renowned expert in Mathematics.
+                    His guidance and passion for teaching have inspired thousands of students to
+                    achieve their academic goals.
+                </p>
+            </div>
+
+            <!-- Faculty Member 2 -->
+            <div class="faculty-card">
+                <img src="images/faculty1.jpg" alt="Rajesh Sahu" class="faculty-img" />
+                <h3>Rajesh Sahu</h3>
+                <p class="role">Head of Science Department</p>
+                <p class="experience">15+ Years of Experience</p>
+                <p class="bio">
+                    Known for making complex scientific concepts simple, Rajesh Sir's dynamic teaching style inspires students to excel in Science. He specializes in Physics and Chemistry.
+                </p>
+            </div>
+
+            <!-- Faculty Member 3 -->
+            <div class="faculty-card">
+                <img src="images/faculty2.jpg" alt="Ankit Yadav" class="faculty-img" />
+                <h3>Ankit Yadav</h3>
+                <p class="role">Physics Faculty</p>
+                <p class="experience">10+ Years of Experience</p>
+                <p class="bio">
+                    Ankit Sir is passionate about physics, using real-world examples to help students understand intricate topics and solve challenging problems.
+                </p>
+            </div>
+
+            <!-- Faculty Member 4 -->
+            <div class="faculty-card">
+                <img src="images/faculty3.jpg" alt="Dr. MG Ali" class="faculty-img" />
+                <h3>Dr. MG Ali</h3>
+                <p class="role">Chemistry Faculty</p>
+                <p class="experience">20+ Years of Experience</p>
+                <p class="bio">
+                    With a doctorate in Chemistry, Dr. Ali brings deep academic knowledge and proven teaching methods to guide students to top scores.
+                </p>
+            </div>
+            
+            <!-- Faculty Member 5 -->
+            <div class="faculty-card">
+                <img src="images/faculty4.jpg" alt="Sachin Pawar" class="faculty-img" />
+                <h3>Sachin Pawar</h3>
+                <p class="role">Biology Faculty</p>
+                <p class="experience">8+ Years of Experience</p>
+                <p class="bio">
+                    Sachin Sir's engaging classes make biology come alive, ensuring students not only learn but also develop a love for the subject.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services-section">
+        <h2 class="section-title text-center">Our Services</h2>
+        <p class="intro-text text-center">We provide a supportive learning ecosystem designed for your success.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Comprehensive Study Material</h3>
+                <p>
+                    Our expertly curated study notes and practice sheets are designed to cover
+                    the entire syllabus and help students master every topic.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-microscope"></i>
+                <h3>Doubt Clearing Sessions</h3>
+                <p>
+                    Dedicated one-on-one and group sessions to address all student queries
+                    and ensure no concept is left unclear.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-users-cog"></i>
+                <h3>Interactive Classrooms</h3>
+                <p>
+                    Our classrooms feature smart panels and are designed to facilitate
+                    interactive and engaging learning experiences.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Regular Mock Tests</h3>
+                <p>
+                    Weekly and monthly tests to track progress, identify weak areas, and
+                    build exam-readiness and time management skills.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Library Facility</h3>
+                <p>
+                    Access to a well-stocked library with a vast collection of reference
+                    books and study resources for all subjects.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bus-alt"></i>
+                <h3>Van Facility</h3>
+                <p>
+                    Safe and convenient transportation service available for students
+                    across the city, ensuring a hassle-free commute.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/Rays Academy LOGO.jpg" alt="Rays logo" class="footer-logo" />
+                <p>© 2025 Rays Academy. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul class="social-links">
+                    <li><a href="" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/@shankaramulani?si=hwFWVNqRYWTukfCI" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/share/1ECsLzqzrw/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/raysacademybhopal?igsh=MWtyNWQyaWVrZHoxcg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <ul class="footer-nav">
+                    <li><a href="pripol.html">Privacy Policy</a></li>
+                    <li><a href="tou.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
